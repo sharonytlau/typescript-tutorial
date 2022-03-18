@@ -1,19 +1,7 @@
 "use strict";
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
-// greet = 'hello';
-// greet = () => {
-//   console.log('hello, again');
-// }
-var add = function (a, b, c /*?*/) {
-    if (c === void 0) { c /*?*/ = 10; }
-    console.log(a + b);
-    console.log(c);
+var greet = function (user) {
+    console.log("".concat(user.name, " says hello"));
 };
-add(5, 10, 'ninja');
-var minus = function (a, b) {
-    return a + b;
+var logDetails = function (uid, item) {
+    console.log("".concat(item, " has a uid of ").concat(uid));
 };
-var result = minus(10, 7);
-console.log(result);
